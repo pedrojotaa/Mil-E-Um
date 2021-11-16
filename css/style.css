@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 840px;
+    margin: auto;
+}
+
+#header{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(95, 92, 92);
+}
+
+#logo{
+    width: 100px;
+}
+
+#description{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 40%;
+}
