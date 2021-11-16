@@ -13,6 +13,7 @@ A QUEM SE DESTINA / OBJETIVO
 Este produto se destima a todo lojista que pretende fazer a demonstração para venda de seus produtos por meio de uma plataform simples mas muito eficiente.
 
 IMAGENS DO PROJETO
+![Sem título](https://user-images.githubusercontent.com/89051795/142059710-26376a98-db8c-47b5-aa23-39c7c6f6ec01.png)
 
 
 SOBRE O PROJETO
