@@ -1,17 +1,80 @@
 let products = [
     { 
-        name: 'White Cap',
-        desc: 'Bone da nova coleção verão',
-        price: '50',
+        name: 'logo Cap',
+        desc: 'logo da marca',
+        price: '1500',
         id: createIdFromProducts(),
-        icon: 'cap1'
+        icon: 'capwhite'
     },
     { 
         name: 'logo Cap',
         desc: 'logo da marca',
         price: '1500',
         id: createIdFromProducts(),
-        icon: 'logo'
+        icon: 'cappurple'
+    },
+    { 
+        name: 'logo Cap',
+        desc: 'logo da marca',
+        price: '1500',
+        id: createIdFromProducts(),
+        icon: 'capblack'
+    },
+    { 
+        name: 'logo Cap',
+        desc: 'logo da marca',
+        price: '1500',
+        id: createIdFromProducts(),
+        icon: 'cappurple'
+    },
+    { 
+        name: 'logo Cap',
+        desc: 'logo da marca',
+        price: '1500',
+        id: createIdFromProducts(),
+        icon: 'cappurple'
+    },
+    { 
+        name: 'logo Cap',
+        desc: 'logo da marca',
+        price: '1500',
+        id: createIdFromProducts(),
+        icon: 'cappurple'
+    },
+    { 
+        name: 'logo Cap',
+        desc: 'logo da marca',
+        price: '1500',
+        id: createIdFromProducts(),
+        icon: 'cappurple'
+    },
+    { 
+        name: 'logo Cap',
+        desc: 'logo da marca',
+        price: '1500',
+        id: createIdFromProducts(),
+        icon: 'cappurple'
+    },
+    { 
+        name: 'logo Cap',
+        desc: 'logo da marca',
+        price: '1500',
+        id: createIdFromProducts(),
+        icon: 'cappurple'
+    },
+    { 
+        name: 'logo Cap',
+        desc: 'logo da marca',
+        price: '1500',
+        id: createIdFromProducts(),
+        icon: 'cappurple'
+    },
+    { 
+        name: 'logo Cap',
+        desc: 'logo da marca',
+        price: '1500',
+        id: createIdFromProducts(),
+        icon: 'cappurple'
     }
 ]
 
