@@ -19,7 +19,7 @@ function initializeProducts(caps){
         createElement.id = cap.id
         createElement.classList.add('container-products')
         createElement.dataset.icon = cap.icon
-
+        
         createObjects(cap, createElement)
 
         products.appendChild(createElement)
@@ -29,11 +29,21 @@ function initializeProducts(caps){
 function createObjects(cap, createElement){
     let capImage = document.createElement('div')
 
-    let imageElement = document.createElement('img')
-    imageElement.classList.add('cap')
-    imageElement.src = './img/'+ cap.icon + '.jpg'
+    let image = document.createElement('img')
+    image.classList.add('cap')
+    image.src = './img/'+ cap.icon + '.jpg'
 
-    capImage.appendChild(imageElement)
+    let desc = document.createElement('p')
+    desc.classList.add('desc')
+    desc.innerHTML = 'teste1'
+    
+    let price = document.createElement('p')
+    price.classList.add('price')
+    price.innerHTML = 'teste2'
+
+    capImage.appendChild(image)
+    capImage.appendChild(desc)
+    capImage.appendChild(price)
 
     createElement.appendChild(capImage)
 }

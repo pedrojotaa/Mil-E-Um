@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,8 +27,7 @@
 }
 
 .container-products{
-    padding: 20px;
-    width: 40%;
+    width: 50%;
 }
 
 .title{
@@ -36,7 +36,7 @@
 }
 
 .cap{
-    width: 200px;
+    width: 150px;
     box-shadow: 10px 10px 15px #272727;
     display: block;
     margin: auto;
@@ -45,7 +45,7 @@
 }
 
 .cap:hover{
-    width: 250px;
+    width: 200px;
 }
 
 .desc{
@@ -60,4 +60,18 @@
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+}
+
+.bg{
+    background-color: #272727;
+}
+
+.footer{
+    display: inline-block;
+    width: 50%;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
 }
