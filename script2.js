@@ -33,48 +33,6 @@ let products = [
         price: '1500',
         id: createIdFromProducts(),
         icon: 'cappurple'
-    },
-    { 
-        name: 'logo Cap',
-        desc: 'logo da marca',
-        price: '1500',
-        id: createIdFromProducts(),
-        icon: 'cappurple'
-    },
-    { 
-        name: 'logo Cap',
-        desc: 'logo da marca',
-        price: '1500',
-        id: createIdFromProducts(),
-        icon: 'cappurple'
-    },
-    { 
-        name: 'logo Cap',
-        desc: 'logo da marca',
-        price: '1500',
-        id: createIdFromProducts(),
-        icon: 'cappurple'
-    },
-    { 
-        name: 'logo Cap',
-        desc: 'logo da marca',
-        price: '1500',
-        id: createIdFromProducts(),
-        icon: 'cappurple'
-    },
-    { 
-        name: 'logo Cap',
-        desc: 'logo da marca',
-        price: '1500',
-        id: createIdFromProducts(),
-        icon: 'cappurple'
-    },
-    { 
-        name: 'logo Cap',
-        desc: 'logo da marca',
-        price: '1500',
-        id: createIdFromProducts(),
-        icon: 'cappurple'
     }
 ]
 
