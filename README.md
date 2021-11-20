@@ -22,7 +22,10 @@ Este produto se destima a todo lojista que pretende fazer a demonstração para 
 * HTML
 * CSS 
 * JavaScript
+* NodeJS
+* ExpressJS
 
+Foi criada uma API que armazena os dados dos produtos onde ao carregar a pagina é feita uma requisição para a API que entrega a página as informações de cada produto e então são gerados automaticamente na tela.
 Banco de dados será implementado em breve para facilitar armazenamento dos dados e conteúdos.
 
 ### SE VOCÊ CHEGOU ATÉ AQUI
