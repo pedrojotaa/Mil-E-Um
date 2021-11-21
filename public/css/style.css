@@ -34,7 +34,7 @@
 
 .carousel{
     display: flex;
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
     background-color: white;
     overflow-x: scroll;
@@ -58,10 +58,11 @@
     margin: auto;
     margin-bottom: 30px;
     transition: 1s;
+    cursor: pointer;
 }
 
 .cap:hover{
-    width: 200px;
+    width: 180px;
 }
 
 .desc{
@@ -90,10 +91,56 @@
     max-width: 70%;
     margin: auto;
     padding: 2px;
+    cursor: pointer;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.btnleft, .btnright{
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px 0 5px;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
 }
 
 .bg{
     background-color: #272727;
+}
+
+.history{
+    background-color: rgb(204, 197, 197, .2);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.history-desc{
+    width: 300px;
+    text-align: justify;
+    margin-right: 10px;
+}
+
+.history-desc h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.history-picture{
+    width: 300px;
+    margin-left: 10px;
+}
+
+.history-picture img{
+    width: 300px;
 }
 
 /* localização */
@@ -104,7 +151,6 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: rgb(204, 197, 197, .2);
 }
 
 .where-title{
@@ -131,7 +177,7 @@
 }
 
 .footer-help, .footer-about{
-    margin-left: 50px;
+    margin: 0 5px 0 5px;
 }
 
 .footer-help-title, .footer-about-title{
@@ -164,17 +210,27 @@
 
 /* responsividade */
 
-/* @media screen and (max-width: 1200px){
-    .products{
+@media screen and (max-width: 550px){
+    .history{
         display: block;
     }
 
-    .container-products{
-        display: inline-block;
-        margin: 5px;
+    .history-desc, .history-picture{
+       margin: auto;
     }
 
-    .cap:hover{
-        width: 150px;
+    .history-desc{
+        margin-bottom: 10px;
     }
-} */
+}
+
+@media screen and (max-width: 470px){
+    .footer-help-title, .footer-about-title{
+        font-size: 12px;
+    }
+    
+    .footer-help-link a, .footer-about-link a{
+        font-size: 9px;
+        
+    }
+}

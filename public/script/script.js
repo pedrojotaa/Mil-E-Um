@@ -30,3 +30,13 @@ function updatePost(){
 function idProduct(){
     return Math.random().toString(36).substr(2, 9)
 }
+
+let carousel = document.querySelector('.carousel')
+
+function rightbtn(){
+    carousel.scrollLeft += carousel.offsetWidth
+}
+
+function leftbtn(){
+    carousel.scrollLeft -= carousel.offsetWidth
+}
