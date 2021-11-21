@@ -6,12 +6,13 @@ module.exports = {
             title: 'test title',
             description: 'test description',
             icon: 'capblack',
-            price: '50'
-
+            price: '50',
+            oldprice: '50'
         }
     ],
 
     getAll(){
         return this.posts
     }
+
 }
