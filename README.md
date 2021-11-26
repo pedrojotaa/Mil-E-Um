@@ -1,36 +1,40 @@
-## MIL E UM
+<h1 align="center">Página de Vendas</h1>
 
-PROJETO EM CONSTRUÇÃO...
+<h4 align="center"> 
+	🚧  Em construção... 🚀 🚧
+</h4>
 
-### O QUE É
+### O que é?
 
-Projeto que tem como objetivo a venda de produtos que serão mostrados na tela.
-Terá um link de vendas que redicionará o cliente para uma conta comercial do vendedor do produto.
+* Pagina para venda de produtos que serão exibidos na tela.
 
-### A QUEM SE DESTINA / OBJETIVO
+### A quem se destina/ Objetivo
 
-Este produto se destima a todo lojista que pretende fazer a demonstração para venda de seus produtos por meio de uma plataforma simples mas muito eficiente.
+* Todo lojista iniciante que pretende fazer a demonstração e venda de seus produtos.
+* Plataforma simples e intuitiva para facilitar a interação do lojista.
 
-### IMAGENS DO PROJETO
+### Imagens do Projeto
 
 ![mileum](https://user-images.githubusercontent.com/89051795/142897603-0c3df7b2-a85c-46a9-923e-fa14b51c2490.gif)
 
-### TECNOLOGIAS
+### Tecnologias
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/> 
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/> 
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/> 
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/> 
 <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/> 
 
-* Foi criada uma API que armazena os dados dos produtos onde ao carregar a pagina é feita uma requisiçãopara a API 
-que entrega a página as informações de cada produto e então são gerados automaticamente na tela.<br>
-* Banco de dados será implementado em breve para facilitar armazenamento dos dados e conteúdos.<br>
-* Um gerador de valor do frete será implementado em breve, e será concatenado com o valor do produto.
+### Features
 
-### SE VOCÊ CHEGOU ATÉ AQUI
+- [x] API que armazena as informações dos produtos e gera automaticamente na tela
+- [ ] Transferência das informações para um Banco de Dados
+- [ ] API para gerar o valor do Frete
+- [ ] Redicionamento do cliente para uma conta comercial do vendedor
+
+### Se chegou ate aqui
 
 Muito obrigado pela atenção, e se houver alguma dúvida ou idéia para melhorar a página é so entrar em contato!
 
-### AUTOR/ORGANIZADOR
+### Autor/ Organizador
 
 João Pedro Almeida.
