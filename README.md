@@ -27,6 +27,7 @@
 ### Features
 
 - [x] API que armazena as informações dos produtos e gera automaticamente na tela
+- [ ] Carousel para demonstração dos produtos
 - [ ] Transferência das informações para um Banco de Dados
 - [ ] API para gerar o valor do Frete
 - [ ] Redicionamento do cliente para uma conta comercial do vendedor
