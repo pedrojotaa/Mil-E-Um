@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 })
 
 function updatePost(){
-    fetch('http://192.168.0.16:3000/api/all')
+    fetch('http://localhost:3000/api/all')
         .then(res => {
             return res.json()
         }).then(json => {
@@ -15,7 +15,7 @@ function updatePost(){
             posts.forEach((post) => {
 
                 let postElement = `<div class="container-products" id="${post.icon + idProduct()}">
-                                        <img src="./img/${post.icon}.jpg" alt="${post.icon}" class="cap">
+                                        <img src="./img/${post.icon}.jpg" alt="${post.icon}" class="cap skeleton">
                                         <p class="desc">${post.title}</p>
                                         <p class="old-price">R$${post.oldprice}</p>
                                         <p class="price">R$${post.price}</p>
