@@ -1,5 +1,16 @@
 document.addEventListener('DOMContentLoaded', ()=> {
-    updatePost()
+
+    let carousel = document.querySelector('.carousel')
+    let containerProducts = document.querySelector('.container-products')
+   
+    for (let i=0 ; i <10 ; i++){
+        let elementoClone = containerProducts.cloneNode(true);
+        carousel.appendChild(elementoClone)
+    }
+
+    setTimeout(() => {
+        updatePost()
+    }, 2000)
 })
 
 function updatePost(){
@@ -15,7 +26,7 @@ function updatePost(){
             posts.forEach((post) => {
 
                 let postElement = `<div class="container-products" id="${post.icon + idProduct()}">
-                                        <img src="./img/${post.icon}.jpg" alt="${post.icon}" class="cap skeleton">
+                                        <img src="./img/${post.icon}.jpg" alt="${post.icon}" class="cap">
                                         <p class="desc">${post.title}</p>
                                         <p class="old-price">R$${post.oldprice}</p>
                                         <p class="price">R$${post.price}</p>
@@ -33,6 +44,7 @@ function idProduct(){
 
 let carousel = document.querySelector('.carousel')
 
+   
 function rightbtn(){
     carousel.scrollLeft += carousel.offsetWidth
 }
