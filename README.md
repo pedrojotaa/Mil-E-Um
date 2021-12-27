@@ -1,37 +1,41 @@
-## MIL E UM
+<h1 align="center">Página de Vendas</h1>
 
+<h4 align="center"> 
+	🚧  Em construção... 🚀 🚧
+</h4>
 
-PROJETO EM CONSTRUÇÃO...
+### O que é?
 
-### O QUE É
+* Pagina para venda de produtos que serão exibidos na tela.
 
-Projeto que tem como objetivo a venda de produtos que serão mostrados na tela.
-Terá um link de vendas que redicionará o cliente para uma conta comercial do vendedor do produto.
+### A quem se destina/ Objetivo
 
-### A QUEM SE DESTINA / OBJETIVO
+* Todo lojista iniciante que pretende fazer a demonstração e venda de seus produtos.
+* Plataforma simples e intuitiva para facilitar a interação do lojista.
 
-Este produto se destima a todo lojista que pretende fazer a demonstração para venda de seus produtos por meio de uma plataforma simples mas muito eficiente.
+### Imagens do Projeto
 
-### IMAGENS DO PROJETO
+![mileum](https://user-images.githubusercontent.com/89051795/142897603-0c3df7b2-a85c-46a9-923e-fa14b51c2490.gif)
 
+### Tecnologias
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/> 
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/> 
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/> 
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/> 
+<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/> 
 
-![GIFmileum](https://user-images.githubusercontent.com/89051795/142642604-5cd13597-23b3-4cd5-8660-129da17e6019.gif)
+### Features
 
-### TECNOLOGIAS
+- [x] API que armazena as informações dos produtos e gera automaticamente na tela
+- [x] Carousel para demonstração dos produtos
+- [ ] Transferência das informações para um Banco de Dados
+- [ ] API para gerar o valor do Frete
+- [ ] Redicionamento do cliente para uma conta comercial do vendedor
 
-* HTML
-* CSS 
-* JavaScript
-* NodeJS
-* ExpressJS
-
-Foi criada uma API que armazena os dados dos produtos onde ao carregar a pagina é feita uma requisição para a API que entrega a página as informações de cada produto e então são gerados automaticamente na tela.
-Banco de dados será implementado em breve para facilitar armazenamento dos dados e conteúdos.
-
-### SE VOCÊ CHEGOU ATÉ AQUI
+### Se chegou ate aqui
 
 Muito obrigado pela atenção, e se houver alguma dúvida ou idéia para melhorar a página é so entrar em contato!
 
-### AUTOR/ORGANIZADOR
+### Autor/ Organizador
 
 João Pedro Almeida.
