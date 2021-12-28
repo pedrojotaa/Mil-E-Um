@@ -1,17 +1,5 @@
-document.addEventListener('DOMContentLoaded', ()=> {
-
-    let carousel = document.querySelector('.carousel')
-    let containerProducts = document.querySelector('.container-products')
-   
-    for (let i=0 ; i <10 ; i++){
-        let elementoClone = containerProducts.cloneNode(true);
-        carousel.appendChild(elementoClone)
-    }
-
-    setTimeout(() => {
-        updatePost()
-    }, 2000)
-})
+updatePost()
+skeleton()
 
 function updatePost(){
     fetch('http://localhost:3000/api/all')
@@ -36,19 +24,19 @@ function updatePost(){
             let mural = document.querySelector('.carousel')
             mural.innerHTML = postElements
         })
+
 }
 
 function idProduct(){
     return Math.random().toString(36).substr(2, 9)
-}
+} 
 
-let carousel = document.querySelector('.carousel')
-
-   
-function rightbtn(){
-    carousel.scrollLeft += carousel.offsetWidth
-}
-
-function leftbtn(){
-    carousel.scrollLeft -= carousel.offsetWidth
+function skeleton(){
+    let carousel = document.querySelector('.carousel')
+    let containerProducts = document.querySelector('.container-products')
+    
+    for (let i=0 ; i <10 ; i++){
+        let elementoClone = containerProducts.cloneNode(true);
+        carousel.appendChild(elementoClone)
+    }
 }

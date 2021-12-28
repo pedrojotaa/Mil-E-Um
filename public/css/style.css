@@ -30,7 +30,6 @@
 
 .products{
     background-color: white;
-    height: 350px;
 }
 
 .carousel{
@@ -53,18 +52,13 @@
 }
 
 .cap{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     display: block;
     margin: auto;
     margin-bottom: 30px;
     transition: 1s;
     cursor: pointer;
-    transform: scale(.9);
-}
-
-.cap:hover{
-    transform: scale(1);
 }
 
 .skeleton{
@@ -96,10 +90,10 @@
 
 
 .desc{
-    color: rgb(88, 191, 255);
-    font-weight: bold;
+    color: rgb(77, 77, 77);
     margin-bottom: 20px;
     text-align: center;
+    font-weight: bold;
 }
 
 .old-price{
@@ -137,6 +131,8 @@
     cursor: pointer;
     margin: 0 5px 0 5px;
 }
+
+
 
 .carousel::-webkit-scrollbar{
     display: none;
@@ -236,6 +232,33 @@
     background-position: center; 
     width: 100%; 
     height: 100vh; 
+}
+
+
+/* popup */
+
+.carrinho{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    background-color: rgb(140, 139, 139, .9);
+    transition: all ease-in-out 0.5s;
+}
+
+.mostra-carrinho{
+    width: 300px;
+}
+
+.carrinho-icon{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    background-color: orange;
+    z-index: 1;
 }
 
 /* responsividade */
