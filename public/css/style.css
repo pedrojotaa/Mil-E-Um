@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-
-
 .frete-title{
-    background-color: purple;
+    background: linear-gradient(45deg, white, rgb(177, 2, 177), purple);
     color: white;
     padding: 5px;
     text-align: center;
@@ -59,6 +58,7 @@
     margin-bottom: 30px;
     transition: 1s;
     cursor: pointer;
+    transform: scale(.9);
 }
 
 .skeleton{
@@ -243,12 +243,43 @@
     bottom: 0;
     right: 0;
     width: 0;
-    background-color: rgb(140, 139, 139, .9);
+    background-color: white;
+    box-shadow: -6px 0 10px rgb(0, 0, 0, .4);
     transition: all ease-in-out 0.5s;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.carrinho-title{
+    font-size: 23px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carrinho-itens{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.carrinho-itens img{
+    width: 70px;
+}
+
+.carrinho-itens input[type='number']{
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid greenyellow;
+    padding: 2px;
+    text-align: center;
+    outline: none;
 }
 
 .mostra-carrinho{
-    width: 300px;
+    width: 350px;
 }
 
 .carrinho-icon{
@@ -258,7 +289,12 @@
     right: 10px;
     top: 10px;
     background-color: orange;
-    z-index: 1;
+    z-index: 2;
+}
+
+.carrinho-valores{
+    padding: 15px;
+    font-weight: bold;
 }
 
 /* responsividade */

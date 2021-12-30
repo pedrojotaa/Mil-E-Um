@@ -18,7 +18,29 @@
     </header>
     <main>
         <div class="pict"></div>
-        <div class="carrinho"></div>
+        <aside class="carrinho">
+            <h1 class="carrinho-title">Carrinho de Compras</h2>
+            <div class="carrinho-itens">
+                <img src="./img/cappurple.jpg" alt="" class="item-imagem">
+                <p class="item-nome">Item</p>
+                <p class="item-valor">R$ 20,30</p>
+                <input type="number" value="1" class="item-quantidade">
+                <button class="item-remover">Remover</button>
+            </div>
+            <div class="carrinho-itens">
+                <img src="./img/capwhite.jpg" alt="" class="item-imagem">
+                <p class="item-nome">Item</p>
+                <p class="item-valor">R$ 20,30</p>
+                <input type="number" value="1" class="item-quantidade">
+                <button class="item-remover">Remover</button>
+            </div>
+            <div class="carrinho-valores">
+                <p class="subtotal">Subtotal:</p>
+                <p class="desconto">Desconto:</p>
+                <p class="total">Total:</p>
+            </div>
+            <button class="finalizar">Finalizar Compra</button>
+        </aside>
         <div class="carrinho-icon"></div>
         <div class="products">
             <div class="carousel">
@@ -81,7 +103,5 @@
     
     <script src="./script/script.js"></script>
     <script src="./script/controller.js"></script>
-    <script>window.rwbp={email:'joaopiteer@hotmail.com',phone:'+5573991211529',message:'Tire qualquer duvida por aqui!',lang:'pt-BR'}</script>
-    <script defer async src='https://duz4dqsaqembt.cloudfront.net/client/whats.js'></script>
 </body>
 </html>
