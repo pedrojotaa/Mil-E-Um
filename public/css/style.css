@@ -57,7 +57,6 @@
     margin: auto;
     margin-bottom: 30px;
     transition: 1s;
-    cursor: pointer;
     transform: scale(.9);
 }
 
@@ -244,7 +243,7 @@
     right: 0;
     width: 0;
     background-color: white;
-    box-shadow: -6px 0 10px rgb(0, 0, 0, .4);
+    box-shadow: -5px 0 10px rgb(0, 0, 0, .4);
     transition: all ease-in-out 0.5s;
     font-size: 14px;
     z-index: 1;
