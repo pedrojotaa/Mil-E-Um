@@ -5,30 +5,56 @@
     box-sizing: border-box;
 }
 
-.frete-title{
-    background: linear-gradient(45deg, white, rgb(177, 2, 177), purple);
+.header{
+    width: 100%;
+    background-color: #5A2D82;
+    position: relative;
+    right: 0;
+}
+
+.header .info{
+    background-color: #370F53;
     color: white;
     padding: 5px;
     text-align: center;
     font-size: 13px;
 }
 
-#header{
-    width: 100%;
-    background-color: #272727;
-    position: relative;
-    right: 0;
+.header .logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding: 25px 40px;
 }
 
-#logo{
-    display: block;
-    width: 200px;
-    margin: auto;
-    padding: 20px;
-}
-
-.products{
+.header .frete{
     background-color: white;
+    color: purple;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.img-principal{
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center; 
+    width: 100%; 
+    height: 70vh; 
+}
+
+/* CAROUSEL */
+
+.carousel-container{
+    background-color: white;
+}
+
+.carousel-container .titulo{
+    font-size: 21px;
+    padding: 20px 30px;
 }
 
 .carousel{
@@ -40,17 +66,12 @@
     scroll-behavior: smooth;
 }
 
-.container-products{
+.carousel-container .carousel .produtos-container{
     max-width: 200px;
     padding: 10px;
 }
 
-.title{
-    color: #272727;
-    font-size: 20px;
-}
-
-.cap{
+.carousel .produtos-container .cap{
     width: 200px;
     height: 200px;
     display: block;
@@ -59,6 +80,55 @@
     transition: 1s;
     transform: scale(.9);
 }
+
+.carousel .produtos-container .desc{
+    color: rgb(77, 77, 77);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.carousel .produtos-container .old-price{
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    text-decoration: line-through;
+}
+
+.carousel .produtos-container .price{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: orangered;
+    border-radius: 5px;
+    max-width: 70%;
+    margin: auto;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.carousel-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btnleft, .btnright{
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px 0 5px;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+/* SKELETON */
 
 .skeleton{
     animation: skeleton-loading 1s linear infinite alternate;
@@ -86,91 +156,150 @@
     }
 }
 
+/* CARRINHO COMPRAS */
 
+.carrinho-icone{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+    background-color: purple;
+    z-index: 2;
+    cursor: pointer;
+    padding: 5px;
+}
 
-.desc{
-    color: rgb(77, 77, 77);
+.carrinho-aba{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    background-color: #5A2D82;
+    box-shadow: -5px 0 10px rgb(0, 0, 0, .4);
+    transition: all ease-in-out 0.5s;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.carrinho-titulo{
+    font-size: 23px;
+    padding: 20px;
     margin-bottom: 20px;
     text-align: center;
-    font-weight: bold;
+    color: white;
+    background-color: #370F53;
 }
 
-.old-price{
-    color: red;
-    font-size: 13px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 5px;
-    text-decoration: line-through;
-}
-
-.price{
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    background-color: orangered;
-    border-radius: 5px;
-    max-width: 70%;
-    margin: auto;
-    padding: 2px;
-    cursor: pointer;
-}
-
-.button{
+.carrinho-itens{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.btnleft, .btnright{
-    background-color: transparent;
-    border: none;
-    font-size: 40px;
+.item-nome{
+    text-align: center;
+    font-size: 16px;
+    color: white;
     font-weight: bold;
+    margin-top: 10px;
+}
+
+.carrinho-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+.item-imagem{
+    width: 70px;
+}
+
+.item-valor{
+    font-size: 14px;
+    color: white;
+}
+
+.carrinho-itens input[type='number']{
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #370F53;
+    padding: 2px;
+    text-align: center;
+    outline: none;
+}
+
+.item-remover{
+    border: none;
     cursor: pointer;
-    margin: 0 5px 0 5px;
+    padding: 3px 6px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-
-
-.carousel::-webkit-scrollbar{
-    display: none;
+.valor-compra{
+    padding: 15px;
+    color: white;
+    font-weight: bold;
 }
 
-.bg{
-    background-color: #272727;
+.finalizar-compra{
+    border: none;
+    cursor: pointer;
+    padding: 6px 15px;
+    background-color: #370F53;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
-.history{
+.mostra-carrinho{
+    width: 350px;
+}
+
+/* HISTORIA */
+
+.historia{
     background-color: rgb(204, 197, 197, .2);
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 30px;
 }
 
-.history-desc{
+.historia .sobre{
     width: 300px;
-    text-align: justify;
     margin-right: 10px;
 }
 
-.history-desc h2{
+.historia .sobre .titulo{
     margin-bottom: 10px;
     text-align: center;
 }
 
-.history-picture{
+.historia .sobre .desc{
+    width: 300px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.historia .foto{
     width: 300px;
     margin-left: 10px;
 }
 
-.history-picture img{
+.historia .foto img{
     width: 300px;
 }
 
-/* localização */
+/* LOCALIZAÇÃO */
 
-.where{
+.localizacao{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -178,125 +307,59 @@
     padding: 20px;
 }
 
-.where-title{
+.localizacaoo .titulo{
     font-size: 18px;
     margin-bottom: 5px;
 }
 
-.where-desc{
+.localizacao .desc{
     font-size: 15px;
     margin-bottom: 10px;
 }
 
-.where-map{
+.localizacao .mapa{
     border-radius: 10px;
     box-shadow: 8px 8px 15px rgb(0, 0, 0, .3);
 }
 
-/* footer */
+/* RODAPÉ */
 
-.footer{
+.bg{
+    background-color: #272727;
+}
+
+.rodape-container{
    display: flex;
    justify-content: center;
    padding: 30px;
 }
 
-.footer-help, .footer-about{
+.rodape-container .ajuda, 
+.rodape-container .sobre{
     margin: 0 5px 0 5px;
 }
 
-.footer-help-title, .footer-about-title{
+.rodape-container .ajuda .titulo, 
+.rodape-container .sobre .titulo{
     font-size: 14px;
     color: white;
     margin-bottom: 10px;
 }
 
-.footer-help-link, .footer-about-link{
+.rodape-container .ajuda .links, 
+.rodape-container .sobre .links{
     list-style: none;
     list-style-type: none;
 }
 
-.footer-help-link a, .footer-about-link a{
+.rodape-container .ajuda .links a, 
+.rodape-container .sobre .links a{
     color: rgb(204, 197, 197, .8);
     text-decoration: none;
     font-size: 12px;
-    
 }
 
-.pict{
-    background-image: url('../img/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-attachment: fixed; 
-    background-position: center; 
-    width: 100%; 
-    height: 100vh; 
-}
-
-
-/* popup */
-
-.carrinho{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    background-color: white;
-    box-shadow: -5px 0 10px rgb(0, 0, 0, .4);
-    transition: all ease-in-out 0.5s;
-    font-size: 14px;
-    z-index: 1;
-}
-
-.carrinho-title{
-    font-size: 23px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.carrinho-itens{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-}
-
-.carrinho-itens img{
-    width: 70px;
-}
-
-.carrinho-itens input[type='number']{
-    width: 50px;
-    height: 25px;
-    border-radius: 5px;
-    border: 1px solid greenyellow;
-    padding: 2px;
-    text-align: center;
-    outline: none;
-}
-
-.mostra-carrinho{
-    width: 350px;
-}
-
-.carrinho-icon{
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    right: 10px;
-    top: 10px;
-    background-color: orange;
-    z-index: 2;
-}
-
-.carrinho-valores{
-    padding: 15px;
-    font-weight: bold;
-}
-
-/* responsividade */
+/* MOBILE */
 
 @media screen and (max-width: 550px){
     .history{

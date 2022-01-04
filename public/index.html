@@ -5,56 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>@mileumclothing</title>
+    <title>Loja de Roupas Online | Mil E Um  </title>
 </head>
 <body>
     <header>
-        <div class="frete-title">
-            <p>FRETE GRÁTIS ACIMA DE R$199,00 - TODO O BRASIL</p>
-        </div>
-        <div id="header">
-            <img src="./img/logo01.jpg" alt="logo" id="logo">
+        <div class="header">
+            <p class="info">Informações Covid-19 - SAIBA MAIS</p>
+            <p class="logo">MIL E UM</p>
+            <p class="frete">FRETE GRÁTIS ACIMA DE R$199,00 - TODO O BRASIL</p>
         </div>
     </header>
+
     <main>
-        <div class="pict"></div>
-        <div class="carrinho-icon"></div>
-        <div class="products">
+        <div class="img-principal"></div>
+
+        <div class="carousel-container">
+            <h2 class="titulo">NOVA COLEÇÃO DE BONÉS VERÃO</h2>
             <div class="carousel">
-                <div class="container-products">
+                <div class="produtos-container">
                     <img class="cap skeleton">
                     <p class="desc skeleton skeleton-text"></p>
                     <p class="old-price skeleton skeleton-text"></p>
                     <p class="price skeleton skeleton-text"></p>
                 </div>
             </div>
-            <div class="button">
-                <button onclick="leftbtn()" class="btnleft"><</button>
-                <button onclick="rightbtn()" class="btnright">></button>
+            <div class="carousel-btn">
+                <button class="btnleft" onclick="leftbtn()"><</button>
+                <button class="btnright" onclick="rightbtn()">></button>
             </div>
         </div>
-        <aside class="carrinho">
-            <h1 class="carrinho-title">Carrinho de Compras</h2>
+
+        <img class="carrinho-icone" src="./img/icone-carrinho.png">
+
+        <aside class="carrinho-aba">
+            <h2 class="carrinho-titulo">Carrinho de Compras</h2>
             <div class="carrinho-produtos">
-                <!-- <div class="carrinho-itens">
-                    <img src="./img/cappurple.jpg" alt="" class="item-imagem">
-                    <p class="item-nome">Item</p>
-                    <p class="item-valor">R$ 20,30</p>
-                    <input type="number" value="1" class="item-quantidade">
-                    <button class="item-remover">Remover</button>
-                </div> -->
+                <div class="carrinho-itens">
+                    <div>
+                        <p class="item-nome">Item</p>
+                    </div>
+                    <div class="carrinho-sec">
+                        <img src="./img/cappurple.jpg" alt="" class="item-imagem">
+                        <p class="item-valor">R$ 20,30</p>
+                        <input type="number" value="1" class="item-quantidade">
+                        <button class="item-remover">Remover</button>
+                    </div>
+                </div>
             </div>
-            <div class="carrinho-valores">
-                <p class="subtotal">Subtotal:</p>
-                <p class="desconto">Desconto:</p>
+            <div class="valor-compra">
+                <p class="subtotal">Subtotal =</p>
+                <p class="desconto">Desconto =</p>
                 <p class="total">Total =</p>
             </div>
-            <button class="finalizar">Finalizar Compra</button>
+
+            <button class="finalizar-compra">Finalizar Compra</button>
         </aside>
-        <div class="history">
-            <div class="history-desc">
-                <h2>Kevin Assunção</h2>
-                <p>Texto sobre como foi a historia da criação da marca mil e um A pub
+
+        <div class="historia">
+            <div class="sobre">
+                <h2 class="titulo">Kevin Assunção</h2>
+                <p class="desc">Texto sobre como foi a historia da criação da marca mil e um A pub
                     licidade no rádio sempre demonstrou ser um meio eficaz e efic
                     iente para ajudar a gerar reconhecimento de marca e expandir negó
                     cios. Com a ascensão das rádios indoor isso ficou ainda mais efic
@@ -62,38 +72,39 @@
                     as “emissoras”, podendo proporcionar assim
                     uma programação direcionada para o seu público-alvo.</p>
             </div>
-            <div class="history-picture">
-                <img src="./img/patrao.jpg" alt="">
+            <div class="foto">
+                <img src="./img/patrao.jpg">
             </div>
-            
         </div>
-        <div class="where">
-            <h2 class="where-title">Localização</h2>
-            <p class="where-desc">Camamu-Bahia</p>
-            <iframe class="where-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247821.08983093544!2d-39.246597283593786!3d-13.946424200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x73ec353a383e20f%3A0xca0fcfb07417df75!2sLOJA%20MIL%20E%20UM!5e0!3m2!1spt-BR!2sbr!4v1637245290096!5m2!1spt-BR!2sbr" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+        <div class="localizacao">
+            <h2 class="title">Localização</h2>
+            <p class="desc">Camamu-Bahia</p>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247821.08983093544!2d-39.246597283593786!3d-13.946424200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x73ec353a383e20f%3A0xca0fcfb07417df75!2sLOJA%20MIL%20E%20UM!5e0!3m2!1spt-BR!2sbr!4v1637245290096!5m2!1spt-BR!2sbr" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </main>
+
     <footer>
-            <div class="footer bg">
-                <div class="footer-help">
-                    <h2 class="footer-help-title">PRECISA DE AJUDA?</h2>
-                    <ul class="footer-help-link">
-                        <li><a href="https://www.youtube.com/">FALE CONOSCO</a></li>
-                        <li><a href="https://www.youtube.com/">POLITICA DE PRIVACIDADE</a></li>
-                        <li><a href="https://www.youtube.com/">POLITICA DE PAGAMENTO</a></li>
-                        <li><a href="https://www.youtube.com/">POLITICA DE ENTREGA</a></li>
-                        <li><a href="https://www.youtube.com/">POLITICA DE TROCA E DEVOLUÇÃO</a></li>
-                    </ul>
-                </div>
-                <div class="footer-about">
-                    <h2 class="footer-about-title">SOBRE A MIL E UM</h2>
-                    <ul class="footer-about-link">
-                        <li><a href="https://www.youtube.com/">NOSSA HISTÓRIA</a></li>
-                        <li><a href="https://www.youtube.com/">MODELOS FOTOGRÁFICOS</a></li>
-                        <li><a href="https://www.youtube.com/">MIL E UM NA SUA LOJA</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="rodape-container" class="bg">
+            <nav class="ajuda">
+                <h2 class="titulo">PRECISA DE AJUDA?</h2>
+                <ul class="links">
+                    <li><a href="https://www.youtube.com/">FALE CONOSCO</a></li>
+                    <li><a href="https://www.youtube.com/">POLITICA DE PRIVACIDADE</a></li>
+                    <li><a href="https://www.youtube.com/">POLITICA DE PAGAMENTO</a></li>
+                    <li><a href="https://www.youtube.com/">POLITICA DE ENTREGA</a></li>
+                    <li><a href="https://www.youtube.com/">POLITICA DE TROCA E DEVOLUÇÃO</a></li>
+                </ul>
+            </nav>
+            <nav class="sobre">
+                <h2 class="titulo">SOBRE A MIL E UM</h2>
+                <ul class="links">
+                    <li><a href="https://www.youtube.com/">NOSSA HISTÓRIA</a></li>
+                    <li><a href="https://www.youtube.com/">MODELOS FOTOGRÁFICOS</a></li>
+                    <li><a href="https://www.youtube.com/">MIL E UM NA SUA LOJA</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
     
     <script src="./script/script.js"></script>

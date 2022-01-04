@@ -12,8 +12,8 @@ async function updatePost() {
 
     posts.forEach((post) => {
 
-        let postElement = `<div class="container-products" id="${post.icon + idProduct()}">
-                                    <img src="./img/${post.icon}.jpg" alt="${post.icon}" class="cap">
+        let postElement = `<div class="produtos-container" id="${post.icon + idProduct()}">
+                                    <img src="./img/${post.icon}.jpg" class="cap">
                                     <p class="desc">${post.title}</p>
                                     <p class="old-price">R$${post.oldprice}</p>
                                     <p class="price">R$${post.price}</p>
@@ -42,7 +42,7 @@ async function adicionaProduto() {
         botao.addEventListener('click', (event) => {
             event.preventDefault()
             let botaoClicado = event.target
-            let telaCarrinhoCompras = document.querySelector('.carrinho')
+            let telaCarrinhoCompras = document.querySelector('.carrinho-aba')
             if (telaCarrinhoCompras.className.toLowerCase() !== 'mostra-carrinho') {
                 telaCarrinhoCompras.classList.add('mostra-carrinho')
                 adicionaCarrinho(botaoClicado)
@@ -59,13 +59,17 @@ function adicionaCarrinho(botaoClicado) {
     let img = produto.querySelector('.cap').src
     let desc = produto.querySelector('.desc').innerText
     let price = produto.querySelector('.price').innerText
-
-    let post = `<div class="carrinho-itens">
-                    <img src="${img}" class="item-imagem">
-                    <p class="item-nome">${desc}</p>
-                    <p class="item-valor">${price}</p>
-                    <input type="number" value="1" class="item-quantidade">
-                    <button class="item-remover">Remover</button>
+     
+    let post =  `<div class="carrinho-itens">
+                    <div>
+                        <p class="item-nome">${desc}</p>
+                    </div>
+                    <div class="carrinho-sec">
+                        <img src="${img}" alt="" class="item-imagem">
+                        <p class="item-valor">${price}</p>
+                        <input type="number" value="1" class="item-quantidade">
+                        <button class="item-remover">Remover</button>
+                    </div>
                 </div>`
     let carrinho = document.querySelector('.carrinho-produtos')
     carrinho.innerHTML += post
@@ -73,19 +77,19 @@ function adicionaCarrinho(botaoClicado) {
 }
 
 function removeDoCarrinho() {
-   let telaCarrinho = document.querySelector('.carrinho')
+   let telaCarrinho = document.querySelector('.carrinho-aba')
 
     telaCarrinho.addEventListener('click', (event) => {
         let botaoClicado = event.target
         if(botaoClicado.className.toLowerCase() == 'item-remover'){
-            botaoClicado.parentElement.remove()
+            botaoClicado.parentElement.parentElement.remove()
             atualizaTotal()
         }
     }) 
 }
 
 function atualizaTotal() {
-    let carrinho = document.querySelector('.carrinho')
+    let carrinho = document.querySelector('.carrinho-aba')
     let compras = carrinho.getElementsByClassName('carrinho-itens')
     let total = 0
     for (let i = 0; i < compras.length; i++) {
@@ -112,10 +116,10 @@ function finalizaCompra() {
 abreFechaCarrinho()
 
 function abreFechaCarrinho() {
-    let close = document.querySelector('.carrinho-icon')
-    let carrinho = document.querySelector('.carrinho')
+    let close = document.querySelector('.carrinho-icone')
+    let carrinho = document.querySelector('.carrinho-aba')
     close.addEventListener('click', () => {
-        if (carrinho.className.toLowerCase() == 'carrinho') {
+        if (carrinho.className.toLowerCase() == 'carrinho-aba') {
             carrinho.classList.add('mostra-carrinho')
         } else {
             carrinho.classList.remove('mostra-carrinho')
@@ -141,7 +145,7 @@ skeleton()
 
 function skeleton() {
     let carousel = document.querySelector('.carousel')
-    let containerProducts = document.querySelector('.container-products')
+    let containerProducts = document.querySelector('.produtos-container')
 
     for (let i = 0; i < 10; i++) {
         let elementoClone = containerProducts.cloneNode(true);
